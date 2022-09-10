@@ -12,6 +12,7 @@
   (require 'dap-cpptools)
   (yas-global-mode)
   (setq lsp-file-watch-threshold 10000)
-  (setq lsp-enable-file-watchers t))
+  (setq lsp-enable-file-watchers t)
+  )
 
 (provide 'jlsp)
