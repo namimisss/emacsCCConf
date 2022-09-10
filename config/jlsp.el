@@ -10,6 +10,8 @@
 (with-eval-after-load 'lsp-mode
   (add-hook 'lsp-mode-hook #'lsp-enable-which-key-integration)
   (require 'dap-cpptools)
-  (yas-global-mode))
+  (yas-global-mode)
+  (setq lsp-file-watch-threshold 10000)
+  (setq lsp-enable-file-watchers t))
 
 (provide 'jlsp)
