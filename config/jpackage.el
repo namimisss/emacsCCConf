@@ -190,6 +190,8 @@
   :ensure t)
 (use-package consult-eglot
   :ensure t)
+(use-package ccls
+  :ensure t)
 (use-package lsp-mode
   :ensure t)
 (use-package lsp-ui
@@ -242,6 +244,21 @@
   (setq projectile-switch-project-action 'neotree-projectile-action))
 
 ;; lang
+;; lang/lsp
+(use-package lsp-mode
+  :ensure t)
+(use-package lsp-treemacs
+  :ensure t)
+(use-package helm-lsp
+  :ensure t)
+(use-package yasnippet
+  :ensure t)
+(use-package hydra
+  :ensure t)
+(use-package helm-xref
+  :ensure t)
+(use-package dap-mode
+  :ensure t)
 ;; ;; cc
 ;; DONE
 (use-package cmake-mode
@@ -285,6 +302,7 @@
   :ensure t)
 (use-package neotree
   :ensure t)
+
 
 
 ;; lang/python

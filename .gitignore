@@ -13,3 +13,7 @@ projectile.cache
 ido.last
 
 elpy
+.dap-breakpoints
+.lsp-session*
+
+
