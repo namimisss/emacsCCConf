@@ -277,7 +277,10 @@
   :ensure t)
 ;; 反汇编
 (use-package disaster
-  :ensure t)
+  :ensure t
+  :config
+  (define-key c-mode-map (kbd "C-c d") 'disaster)
+  (define-key c++-mode-map (kbd "C-c d") 'disaster))
 ;; DONE
 (use-package modern-cpp-font-lock
   :ensure t
